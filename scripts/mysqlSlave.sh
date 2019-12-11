@@ -58,9 +58,9 @@ disk_format() {
 	yum install wget -y
 	for ((j=1;j<=3;j++))
 	do
-		wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/shared_scripts/ubuntu/vm-disk-utils-0.1.sh 
-		if [[ -f /tmp/vm-disk-utils-0.1.sh ]]; then
-			bash /tmp/vm-disk-utils-0.1.sh -b /var/lib/mysql -s
+		wget https://raw.githubusercontent.com/sethbilly/azure-wordpress-mysql-cluster/master/shared_scripts/vm-disk-utils.sh   
+		if [[ -f /tmp/vm-disk-utils.sh ]]; then
+			bash /tmp/vm-disk-utils.sh -b /var/lib/mysql -s
 			if [[ $? -eq 0 ]]; then
 				sed -i 's/disk1//' /etc/fstab
 				umount /var/lib/mysql/disk1
@@ -69,7 +69,7 @@ disk_format() {
 			fi
 			break
 		else
-			echo "download vm-disk-utils-0.1.sh failed. try again."
+			echo "download vm-disk-utils.sh failed. try again."
 			continue
 		fi
 	done

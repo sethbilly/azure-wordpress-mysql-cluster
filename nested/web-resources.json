@@ -88,34 +88,6 @@
                 "priority": 110,
                 "direction": "Inbound"
               }
-            },
-            {
-              "name": "zabbixAgent",
-              "properties": {
-                "description": "Allows zabbix monitoring",
-                "protocol": "Tcp",
-                "sourcePortRange": "*",
-                "destinationPortRange": "10050",
-                "sourceAddressPrefix": "*",
-                "destinationAddressPrefix": "*",
-                "access": "Allow",
-                "priority": 120,
-                "direction": "Inbound"
-              }
-            },
-            {
-              "name": "zabbixAgent1",
-              "properties": {
-                "description": "Allows zabbix monitoring",
-                "protocol": "Tcp",
-                "sourcePortRange": "*",
-                "destinationPortRange": "10051",
-                "sourceAddressPrefix": "*",
-                "destinationAddressPrefix": "*",
-                "access": "Allow",
-                "priority": 130,
-                "direction": "Inbound"
-              }
             }
           ]
         }
@@ -223,7 +195,7 @@
             "fileUris": "[parameters('osSettings').scripts]"
           },
           "protectedSettings": {
-            "commandToExecute": "[concat('bash web.sh ', parameters('mysqlPassword'), ' ', parameters('adminUsername'), ' ', parameters('zabbixServerIPAddress'))]"
+            "commandToExecute": "[concat('bash web.sh ', parameters('mysqlPassword'), ' ', parameters('adminUsername'))]"
           }
         }
       }
