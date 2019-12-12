@@ -1,7 +1,6 @@
 #/bin/bash
 
 webNodeCount=$1
-zabbixServer=$2
 
 
 	

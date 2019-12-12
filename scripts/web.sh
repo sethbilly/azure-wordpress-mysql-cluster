@@ -55,7 +55,7 @@ disk_format() {
 
 create_test_page() {
 #create test php page
-    cat > /var/www/html/info.php <<EOF
+    cat > /var/www/html/info.php <<-EOF
     <?php
         phpinfo();
     ?>
@@ -63,9 +63,9 @@ create_test_page() {
 
 
     #create test php-mysql page
-    cat > /var/www/html/mysql.php <<EOF
+    cat > /var/www/html/mysql.php <<-EOF
     <?php
-        \$conn = mysql_connect('$masterIP', 'root', '$mysqlPassword');
+    \$conn = mysql_connect('$masterIP', 'root', '$mysqlPassword');
         if (!\$conn) {
             die('Could not connect:' . mysql_error());
         }
