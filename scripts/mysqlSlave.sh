@@ -95,3 +95,7 @@ start_mysql() {
 	fi
 
 }
+
+install_mysql
+disk_format
+start_mysql

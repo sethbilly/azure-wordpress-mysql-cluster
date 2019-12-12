@@ -83,3 +83,7 @@ start_mysql() {
 	#grant privileges
 	mysql -uroot -p$mysqlPassword -e "grant replication slave on *.* to 'repluser'@'%' identified by 'replpass';grant all privileges on *.* to 'root'@'%' identified by '$mysqlPassword';flush privileges;"
 }
+
+install_mysql
+disk_format
+start_mysql

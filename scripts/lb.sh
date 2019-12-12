@@ -95,3 +95,7 @@ config_haproxy() {
 	#start haproxy
 	/usr/local/haproxy/sbin/haproxy -f /usr/local/haproxy/haproxy.cfg
 }
+
+install_haproxy
+disk_format
+config_haproxy
