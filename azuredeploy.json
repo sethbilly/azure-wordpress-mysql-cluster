@@ -53,7 +53,7 @@
       "webNodeCount": {
         "type": "int",
         "minValue": 1,
-        "maxValue": 11,
+        "maxValue": 10,
         "defaultValue": 3,
         "metadata": {
           "description": "Number of web server nodes"
