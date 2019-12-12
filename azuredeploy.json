@@ -30,10 +30,9 @@
         "type": "string",
         "allowedValues": [
           "AzureCloud",
-          "AzureChinaCloud"
         ],
         "metadata": {
-          "description": "Different environments in Azure. Choose AzureCloud for Global Azure, and choose AzureChinaCloud for Mooncake (Azure China Cloud)."
+          "description": "Different environments in Azure. Choose AzureCloud for Global Azure."
         }
       },
       "centOsVersion": {

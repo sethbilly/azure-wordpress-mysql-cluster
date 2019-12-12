@@ -35,9 +35,6 @@
       "vmSize": {
         "type": "string"
       },
-      "zabbixServerIPAddress": {
-        "type": "string"
-      },
       "subnet": {
         "type": "object"
       },
