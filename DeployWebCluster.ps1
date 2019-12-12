@@ -1,4 +1,4 @@
-$GitBasePath = '/Users/billy/workspace/dev/demos/azure/AzureWordPressCluster'
+$GitBasePath = '/Users/billy/workspace/dev/demos/AzureWordPressCluster'
 
 New-AzResourceGroupDeployment -ResourceGroupName  WordPressClusterGroup `
     -TemplateFile "$GitBasePath/azuredeploy.json" `

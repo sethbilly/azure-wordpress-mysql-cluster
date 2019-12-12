@@ -62,12 +62,6 @@
               }
             },
             {
-              "name": "[parameters('networkSettings').subnet.redis.name]",
-              "properties": {
-                "addressPrefix": "[parameters('networkSettings').subnet.redis.prefix]"
-              }
-            },
-            {
               "name": "[parameters('networkSettings').subnet.haproxy.name]",
               "properties": {
                 "addressPrefix": "[parameters('networkSettings').subnet.haproxy.prefix]"
