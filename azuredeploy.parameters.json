@@ -18,7 +18,7 @@
         "value": 3
       },
       "dnsNamePrefix": {
-        "value": "GEN-UNIQUE"
+        "value": "genunique1"
       },
       "centOsVersion": {
           "value": "7.0"

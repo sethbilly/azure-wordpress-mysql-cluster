@@ -29,7 +29,7 @@
       "environment": {
         "type": "string",
         "allowedValues": [
-          "AzureCloud",
+          "AzureCloud"
         ],
         "metadata": {
           "description": "Different environments in Azure. Choose AzureCloud for Global Azure."
@@ -99,8 +99,8 @@
       "namespace": "websiteCluster-",
       "virtualNetworkName": "websiteVNET1",
       "numDataDisks": "2",
-      "sizeOfDataDiskInGB": 100,
-      "lbNodeVmSize": "Standard_A3",
+      "sizeOfDataDiskInGB": 50,
+      "lbNodeVmSize": "Standard_A1",
       "webNodeVmSize": "Standard_A1",
       "dbNodeVmSize": "Standard_A1",
       "networkSettings": {
@@ -354,9 +354,6 @@
             },
             "vmSize": {
               "value": "[variables('dbNodeVmSize')]"
-            },
-            "zabbixServerIPAddress": {
-              "value": "[parameters('zabbixServerIPAddress')]"
             },
             "osSettings": {
               "value": "[variables('mysqlSlaveOsSettings')]"

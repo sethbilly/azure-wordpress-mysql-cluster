@@ -144,20 +144,6 @@
                 "lun": 1,
                 "caching": "ReadWrite",
                 "createOption": "Empty"
-              },
-              {
-                "name": "[concat(parameters('namespace'), parameters('vmbasename'), 'vm','_DataDisk3')]",
-                "diskSizeGB": "[parameters('sizeOfDataDiskInGB')]",
-                "lun": 2,
-                "caching": "ReadWrite",
-                "createOption": "Empty"
-              },
-              {
-                "name": "[concat(parameters('namespace'), parameters('vmbasename'), 'vm','_DataDisk4')]",
-                "diskSizeGB": "[parameters('sizeOfDataDiskInGB')]",
-                "lun": 3,
-                "caching": "ReadWrite",
-                "createOption": "Empty"
               }
             ],
             "osDisk": {
