@@ -5,7 +5,6 @@ mysqlPassword=$1
 masterIP=10.0.0.20
 
 
-	
 install_mysql() {
 
 	#get repo

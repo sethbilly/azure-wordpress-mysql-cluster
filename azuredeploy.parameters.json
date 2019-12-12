@@ -6,10 +6,20 @@
         "value": "azureuser"
       },
       "adminPassword": {
-        "value": "GEN-PASSWORD"
+        "reference":{
+          "keyVault": {
+            "id": "/subscriptions/98bdd11c-3fea-4c05-975f-f8f8ad1da533/resourceGroups/WordPressClusterGroup/providers/Microsoft.KeyVault/vaults/WPClusterKeyVaults"
+          },
+          "secretName": "adminPassword"
+        }
       },
       "mysqlPassword": {
-        "value": "GEN-PASSWORD"
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/98bdd11c-3fea-4c05-975f-f8f8ad1da533/resourceGroups/WordPressClusterGroup/providers/Microsoft.KeyVault/vaults/WPClusterKeyVaults"
+          },
+          "secretName": "mysqlPassword"
+        }
       },
       "environment": {
         "value": "AzureCloud"

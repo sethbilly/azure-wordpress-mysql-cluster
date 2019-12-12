@@ -52,7 +52,7 @@ disk_format() {
 
 config_haproxy() {
     haproxyConfigFile="/usr/local/haproxy/haproxy.cfg"
-    cat > ${haproxyConfigFile} <<EOF
+    cat > ${haproxyConfigFile} 
     global         
         maxconn 4096           
         chroot /usr/local/haproxy
