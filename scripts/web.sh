@@ -55,4 +55,3 @@ disk_format() {
 
 install_ap
 disk_format
-#create_test_page
