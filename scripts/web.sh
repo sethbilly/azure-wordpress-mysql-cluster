@@ -52,6 +52,3 @@ disk_format() {
 	done
 		
 }
-
-install_ap
-disk_format

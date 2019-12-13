@@ -96,6 +96,3 @@ start_mysql() {
 
 }
 
-install_mysql
-disk_format
-start_mysql
