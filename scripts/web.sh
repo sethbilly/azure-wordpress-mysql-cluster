@@ -53,7 +53,7 @@ disk_format() {
 		
 }
 
-create_test_page() {
+: 'create_test_page() {
 #create test php page
     cat > /var/www/html/info.php 
     <?php
@@ -96,8 +96,8 @@ create_test_page() {
         mysql_close(\$conn)
     ?>
     EOF
-}
+}'
 
 install_ap
 disk_format
-create_test_page
+#create_test_page
